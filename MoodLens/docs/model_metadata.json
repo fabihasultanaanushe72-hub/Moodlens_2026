@@ -1,0 +1,44 @@
+{
+  "file_size_bytes": 111471960,
+  "sha256": "105efadfa3fb81de29bb39a88f5cc88a7ee3ab004bfb4fc8b43517923c9eaafa",
+  "format": "TFLite schema v3",
+  "input_shape": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "output_shape": [
+    1,
+    7
+  ],
+  "input_type": "FLOAT32",
+  "output_type": "FLOAT32",
+  "labels": [
+    "Angry",
+    "Disgust",
+    "Fear",
+    "Happy",
+    "Neutral",
+    "Sad",
+    "Surprise"
+  ],
+  "builtin_operator_codes": [
+    3,
+    22,
+    40,
+    99,
+    0,
+    76,
+    18,
+    41,
+    4,
+    9,
+    150,
+    39,
+    74,
+    107
+  ],
+  "custom_operators": false,
+  "inference_executed": false
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_main">#5B50F2</color>
+    <color name="purple_light">#6559F5</color>
+    <color name="purple_soft">#EEEFFF</color>
+
+    <color name="teal_main">#13B5A4</color>
+
+    <color name="background">#F8FBFD</color>
+    <color name="card_white">#FFFFFF</color>
+
+    <color name="text_primary">#121827</color>
+    <color name="text_secondary">#667085</color>
+
+    <color name="border">#E5E8ED</color>
+</resources>

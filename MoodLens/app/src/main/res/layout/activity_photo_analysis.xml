@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/background" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/btnPhotoBack" android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/bg_soft" android:src="@drawable/ic_back" android:contentDescription="Back" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="Photo Analysis" android:textSize="23sp" android:textColor="@color/text_primary" android:textStyle="bold" android:gravity="center" android:layout_weight="1" />
+            <Space android:layout_width="48dp" android:layout_height="1dp" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Choose a clear photo. The largest face will be analyzed." android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="18dp" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="300dp" android:layout_marginTop="18dp" android:background="@drawable/bg_white_card" android:clipToOutline="true">
+            <ImageView android:id="@+id/imagePreview" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:contentDescription="Selected photo" android:visibility="gone" />
+            <com.example.moodlens.FaceOverlayView android:id="@+id/photoOverlay" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <TextView android:id="@+id/txtEmpty" style="@style/ML.Body" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:padding="28dp" android:text="Your photo appears here  Take a photo or choose one below" />
+        </FrameLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_white_card" android:padding="18dp" android:layout_marginTop="16dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Prediction Results" android:textSize="19sp" android:textColor="@color/text_primary" android:textStyle="bold" />
+            <ProgressBar android:id="@+id/progressBar" android:layout_width="32dp" android:layout_height="32dp" android:layout_gravity="center" android:visibility="gone" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Choose or capture a photo to begin." android:textSize="15sp" android:textColor="@color/text_primary" android:id="@+id/txtResult" android:layout_marginTop="12dp" />
+            <LinearLayout android:id="@+id/scoreContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="18dp">
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/btnTakePhoto" style="@style/ML.Tab" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Take photo" android:layout_weight="1" android:layout_margin="3dp" />
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/btnGallery" style="@style/ML.Tab" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Choose photo" android:layout_weight="1" android:layout_margin="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
