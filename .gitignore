@@ -26,3 +26,11 @@ replay_pid*
 # Kotlin Gradle plugin data, see https://kotlinlang.org/docs/whatsnew20.html#new-directory-for-kotlin-data-in-gradle-projects
 .kotlin/
 .ipynb_checkpoints/
+**/.gradle/
+**/build/
+**/.idea/
+**/local.properties
+**/*.apk
+**/*.aab
+**/*.jks
+**/*.keystore

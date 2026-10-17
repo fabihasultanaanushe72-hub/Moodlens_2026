@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/background" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="MoodLens" android:textSize="34sp" android:textColor="@color/text_primary" android:textStyle="bold" android:layout_weight="1" />
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/btnAbout" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_info" android:background="@drawable/bg_soft" android:contentDescription="About MoodLens" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="See the emotion behind every expression" android:textSize="14sp" android:textColor="@color/text_secondary" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="166dp" android:layout_marginTop="24dp" android:padding="18dp" android:background="@drawable/bg_hero" android:orientation="horizontal" android:gravity="center_vertical">
+            <ImageView android:layout_width="88dp" android:layout_height="88dp" android:src="@drawable/moodlens_hero_logo" android:importantForAccessibility="no" android:scaleType="fitCenter" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Detect. Understand. Explore Emotions." android:textSize="21sp" android:textColor="@color/card_white" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="FER-powered facial expression recognition" android:textSize="13sp" android:textColor="@color/card_white" android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:baselineAligned="false" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/cardLive" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_margin="5dp" android:background="@drawable/bg_purple_card" android:foreground="?attr/selectableItemBackground" android:clickable="true" android:focusable="true" android:orientation="vertical" android:gravity="center" android:minHeight="160dp" android:padding="16dp" android:elevation="2dp">
+                <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_camera" android:tint="#FFFFFF" android:importantForAccessibility="no" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Live Detection" android:textSize="17sp" android:textColor="@color/card_white" android:gravity="center" android:textStyle="bold" android:layout_marginTop="12dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Detect in real time" android:textSize="12sp" android:textColor="@color/card_white" android:gravity="center" android:layout_marginTop="6dp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/cardPhoto" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_margin="5dp" android:background="@drawable/bg_teal_card" android:foreground="?attr/selectableItemBackground" android:clickable="true" android:focusable="true" android:orientation="vertical" android:gravity="center" android:minHeight="160dp" android:padding="16dp" android:elevation="2dp">
+                <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_photo" android:tint="#FFFFFF" android:importantForAccessibility="no" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Photo Analysis" android:textSize="17sp" android:textColor="@color/card_white" android:gravity="center" android:textStyle="bold" android:layout_marginTop="12dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Take or choose a photo" android:textSize="12sp" android:textColor="@color/card_white" android:gravity="center" android:layout_marginTop="6dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:baselineAligned="false" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/cardTargets" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_margin="5dp" android:background="@drawable/bg_white_card" android:foreground="?attr/selectableItemBackground" android:clickable="true" android:focusable="true" android:orientation="vertical" android:gravity="center" android:minHeight="160dp" android:padding="16dp" android:elevation="2dp">
+                <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_target" android:tint="@color/purple_main" android:importantForAccessibility="no" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Target Emotions" android:textSize="17sp" android:textColor="@color/text_primary" android:gravity="center" android:textStyle="bold" android:layout_marginTop="12dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Choose what to highlight" android:textSize="12sp" android:textColor="@color/text_secondary" android:gravity="center" android:layout_marginTop="6dp" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/cardHistory" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_margin="5dp" android:background="@drawable/bg_white_card" android:foreground="?attr/selectableItemBackground" android:clickable="true" android:focusable="true" android:orientation="vertical" android:gravity="center" android:minHeight="160dp" android:padding="16dp" android:elevation="2dp">
+                <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_history" android:tint="@color/purple_main" android:importantForAccessibility="no" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="History" android:textSize="17sp" android:textColor="@color/text_primary" android:gravity="center" android:textStyle="bold" android:layout_marginTop="12dp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Your saved detections" android:textSize="12sp" android:textColor="@color/text_secondary" android:gravity="center" android:layout_marginTop="6dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_white_card" android:padding="18dp" android:layout_marginTop="16dp" android:id="@+id/cardAnalytics" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+            <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_analytics" android:importantForAccessibility="no" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Analytics" android:textSize="19sp" android:textColor="@color/text_primary" android:textStyle="bold" android:layout_marginTop="8dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore expression patterns over time" android:textSize="13sp" android:textColor="@color/text_secondary" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="On-device analysis • Local history" android:textSize="12sp" android:textColor="@color/text_secondary" android:gravity="center" android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>
