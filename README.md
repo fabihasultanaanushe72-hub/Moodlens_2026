@@ -441,6 +441,7 @@ This repository is provided under the MIT License. See the [LICENSE](LICENSE) fi
 Third-party datasets, pretrained models, and software dependencies remain subject to their own applicable licenses and terms.
 
 ---
+## Dataset mirror: https://www.kaggle.com/datasets/msambare/fer2013. 
 
 ## Final Note
 
